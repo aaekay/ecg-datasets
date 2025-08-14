@@ -3,7 +3,7 @@
 A curated, growing list of publicly available ECG datasets. Use this as a starting point to discover datasets for research and development.
 
 - Columns: Dataset name, initial release year (when known), type (waveform or images), and the official link.
-- Notes: Years refer to the initial public release where possible; if uncertain, the year is left as 4d. Please open a PR to add entries, fix dates, or expand details.
+- Notes: Years refer to the initial public release where possible; if uncertain, the year is left as —. Please open a PR to add entries, fix dates, or expand details.
 
 Last updated: 2025-08-14
 
