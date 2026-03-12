@@ -3,7 +3,7 @@
 *A curated collection of public ECG datasets for machine learning, research, and clinical applications*
 
 [![Stars](https://img.shields.io/github/stars/aaekay/ecg-datasets?style=social)](https://github.com/aaekay/ecg-datasets)
-[![Last Updated](https://img.shields.io/badge/last%20updated-Dec--2025-blue)](https://github.com/aaekay/ecg-datasets)
+[![Last Updated](https://img.shields.io/badge/last%20updated-Mar--2026-blue)](https://github.com/aaekay/ecg-datasets)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#contributing)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -28,7 +28,9 @@
 
 | Dataset | Year | Records | Patients | Duration | Leads | Sample Rate | Access | License | Link |
 |---------|------|---------|----------|----------|-------|-------------|--------|---------|------|
+| **HEEDB** | 2025 | 10,608,417 | 1,818,247 | 10s | 12-lead | 250-500 Hz | Credentialed | BDSP License | [BDSP](https://bdsp.io/content/heedb/4.0/) |
 | **CODE-II** | 2025 | 2,735,269 | 2,093,807 | 10s | 12-lead | 500 Hz | Public | CC BY 4.0 | [arXiv](https://arxiv.org/abs/2511.15632) |
+| **MIMIC-IV-ECG** | 2023 | ~800,000 | ~160,000 | 10s | 12-lead | 500 Hz | Credentialed | PhysioNet License | [PhysioNet](https://physionet.org/content/mimic-iv-ecg/) |
 | **SPH 12-lead** | 2022 | 25,770 | 24,666 | 10-60s | 12-lead | 500 Hz | Academic | CC BY 4.0 | [Nature Data](https://doi.org/10.1038/s41597-022-01403-5) |
 | **Chapman-Shaoxing** | 2020 | 45,152 | 34,905 | 10s | 12-lead | 500 Hz | Public | ODC-BY | [Figshare](https://figshare.com/collections/ChapmanECG/4560497/2) |
 | **PTB-XL** | 2020 | 21,837 | 18,885 | 10s | 12-lead | 500 Hz | Public | CC BY 4.0 | [PhysioNet](https://physionet.org/content/ptb-xl/1.0.3/) |
@@ -69,6 +71,7 @@
 
 | Dataset | Year | Records | Patients | Special Features | Access | Link |
 |---------|------|---------|----------|-----------------|--------|------|
+| **OpenECG** | 2025 | 1,200,000 | Multiple | Foundation model benchmark, 9 centers | Public | [arXiv](https://arxiv.org/abs/2503.00711) |
 | **EchoNext** | 2025 | Variable | Variable | ECG + Echocardiogram, structural heart disease | Public | [PhysioNet](https://physionet.org/content/echonext/) |
 | **Heartcare-220K** | 2025 | 220,000 | 220,000 | Multimodal framework, disease diagnosis | Public | [arXiv](https://arxiv.org/abs/2506.05831) |
 | **Icentia11k** | 2024 | 2B beats | 11,000 | Continuous ECG, up to 2 weeks | Public | [PhysioNet](https://physionet.org/content/icentia11k-continuous-ecg/1.0/) |
@@ -84,6 +87,7 @@
 
 | Challenge | Year | Records | Task | Best Performance | Access | Link |
 |-----------|------|---------|------|-----------------|--------|------|
+| **Challenge 2026** | 2026 | TBD | TBD | Upcoming | Public | [Kaggle](https://www.kaggle.com/datasets/physionet/physionetchallenge2026data) |
 | **Challenge 2025** | 2025 | Multiple sources | Chagas disease detection from ECG | In progress | Public | [Moody Challenge](https://moody-challenge.physionet.org/2025) |
 | **Challenge 2024** | 2024 | 21,799 images | ECG Image Digitization | Results pending | Public | [PhysioNet](https://physionet.org/content/challenge-2024/1.0.0/) |
 | **Challenge 2021** | 2021 | 88,253 | Multi-lead ECG Classification | F1: 0.71 | Public | [PhysioNet](https://physionet.org/content/challenge-2021/1.0.3/) |
@@ -116,10 +120,12 @@
 
 | Dataset | Records | Patients | Total Hours | Data Size | Year |
 |---------|---------|----------|-------------|-----------|------|
+| HEEDB | 10,608,417 | 1,818,247 | 29,468 | ~1.6 TB | 2025 |
 | CODE-II | 2,735,269 | 2,093,807 | 7,598 | ~500 GB | 2025 |
+| MIMIC-IV-ECG | ~800,000 | ~160,000 | ~2,222 | ~150 GB | 2023 |
 | PhysioNet 2021 | 88,253 | 88,253 | 245.1 | ~15 GB | 2021 |
-| SPH 12-lead | 25,770 | 24,666 | Variable | ~5.1 GB | 2022 |
 | Chapman-Shaoxing | 45,152 | 34,905 | 125.4 | ~8.2 GB | 2020 |
+| SPH 12-lead | 25,770 | 24,666 | Variable | ~5.1 GB | 2022 |
 | PTB-XL | 21,837 | 18,885 | 60.7 | ~2.5 GB | 2020 |
 | MIT-BIH Arrhythmia | 48 | 47 | 24 | ~23 MB | 1980 |
 
@@ -127,23 +133,24 @@
 
 | Condition | Primary Datasets | Total Records | Best Performance |
 |-----------|------------------|---------------|-----------------|
-| **Arrhythmia** | MIT-BIH, PTB-XL, Chapman, CODE-II | 2,800,000+ | 99.3% Acc |
-| **Atrial Fibrillation** | MIT-BIH AF, CPSC 2018/2021, Icentia11k | 16,697+ | F1: 0.91 |
-| **Myocardial Infarction** | PTB-XL, PTB Diagnostic, CODE-II | 2,750,000+ | AUC: 0.95 |
+| **Arrhythmia** | MIT-BIH, PTB-XL, Chapman, CODE-II, HEEDB | 13,000,000+ | 99.3% Acc |
+| **Atrial Fibrillation** | MIT-BIH AF, CPSC 2018/2021, Icentia11k, MIMIC-IV-ECG | 800,000+ | AUROC: 0.996 (ECG-FM) |
+| **Myocardial Infarction** | PTB-XL, PTB Diagnostic, CODE-II, HEEDB | 13,000,000+ | AUC: 0.95+ |
 | **Structural Heart Disease** | EchoNext | Variable | 77% Acc (EchoNext) |
-| **Normal vs Abnormal** | All major datasets | 3,000,000+ | 98.7% Acc |
-| **Multi-label** | PTB-XL, Chapman, SPH, CODE-II | 2,800,000+ | F1: 0.71 |
+| **Normal vs Abnormal** | All major datasets | 14,000,000+ | 98.7% Acc |
+| **Multi-label (150+ classes)** | HEEDB, PTB-XL, Chapman, SPH, CODE-II | 13,000,000+ | AUROC >0.95 (ECGFounder) |
 
 ### By Data Type and Format
 
 | Data Type | Datasets | Advantages | Use Cases |
 |-----------|----------|------------|-----------|
-| **Raw Waveform** | PTB-XL, Chapman, MIT-BIH, CODE-II, Icentia11k | High fidelity, full information | Deep learning, signal processing |
+| **Raw Waveform** | HEEDB, PTB-XL, Chapman, MIT-BIH, CODE-II, Icentia11k, MIMIC-IV-ECG | High fidelity, full information | Deep learning, signal processing |
 | **Continuous Monitoring** | Icentia11k | Long-term recordings, up to 2 weeks | Arrhythmia detection, HRV analysis |
 | **Processed Features** | PTB-XL+ | Pre-extracted features | Traditional ML, quick prototyping |
 | **Images** | PTB-XL Images, Challenge 2024 | Visual interpretation | Computer vision, image-based ML |
 | **Multimodal** | EchoNext, Heartcare-220K | ECG + other clinical data | Comprehensive diagnosis |
-| **Annotations** | Most PhysioNet datasets | Expert labels | Supervised learning, validation |
+| **Foundation Model Training** | HEEDB, OpenECG, MIMIC-IV-ECG | Large-scale pre-training | Self-supervised learning, transfer learning |
+| **Annotations** | Most PhysioNet datasets, HEEDB | Expert labels, ICD codes | Supervised learning, validation |
 
 ---
 
@@ -180,6 +187,26 @@
 | **EchoNext** | Structural heart disease detection | ECG + Echocardiogram, 77% accuracy | [PhysioNet](https://physionet.org/content/echonext/) |
 | **VARS** | Versatile ECG analysis | Graph-based representation, risk-sensitive | [arXiv](https://arxiv.org/abs/2511.07973) |
 
+### ECG Foundation Models
+
+| Model | Year | Training Data | Parameters | Key Capability | Open Source | Link |
+|-------|------|---------------|------------|----------------|-------------|------|
+| **ECGFounder** | 2024 | 10.7M ECGs (HEEDB) | - | 150 diagnostic categories, AUROC >0.95 for 80 diagnoses | Yes | [arXiv](https://arxiv.org/abs/2410.04133), [GitHub](https://github.com/PKUDigitalHealth/ECGFounder) |
+| **AnyECG** | 2026 | 13.3M ECGs | - | 1,172 conditions, holistic health profiling, future risk prediction | - | [arXiv](https://arxiv.org/abs/2601.10748) |
+| **ECG-FM** | 2024 | 1.5M ECGs (MIMIC-IV + PhysioNet) | 90.9M | AF detection AUROC 0.996, open weights | Yes | [arXiv](https://arxiv.org/abs/2408.05178), [GitHub](https://github.com/bowang-lab/ecg-fm) |
+| **CardX** | 2025 | 1M+ ECGs | Efficient | ExChanGeAI platform, local fine-tuning | Yes (MIT) | [arXiv](https://arxiv.org/abs/2503.13570) |
+| **ECGFM** | 2025 | 1M+ multi-center ECGs | - | Contrastive + generative + diagnostic text generation | - | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1566253525004361) |
+
+### ECG Language Models
+
+| Model | Year | Task | Key Innovation | Link |
+|-------|------|------|----------------|------|
+| **ECG-GPT** | 2024 | ECG image interpretation | Vision encoder-decoder, format-independent, validated on 3.8M ECGs | [medRxiv](https://www.medrxiv.org/content/10.1101/2024.02.17.24302976v2) |
+| **CAMEL** | 2026 | Cardiac event forecasting | First ELM for forecasting, +7% on ECGBench, +12.4% on ECGForecastBench | [arXiv](https://arxiv.org/abs/2602.15677) |
+| **GEM** | 2025 | Grounded ECG understanding | Unifies time series + images + text, NeurIPS 2025, +22.7% explainability | [arXiv](https://arxiv.org/abs/2503.06073), [GitHub](https://github.com/lanxiang1017/gem) |
+| **ELF** | 2026 | ECG interpretation | Encoder-free, single projection layer, matches SOTA | [arXiv](https://arxiv.org/abs/2601.18798) |
+| **RhythmBERT** | 2026 | Heart disease detection | Self-supervised on latent ECG representations | [arXiv](https://arxiv.org/abs/2602.23060) |
+
 ### Machine Learning Frameworks
 
 | Framework | ECG-Specific Features | Popular Models |
@@ -196,17 +223,32 @@
 
 | Paper | Year | Citations | Focus |
 |-------|------|-----------|--------|
+| "A Systematic Review on Foundation Models for Electrocardiogram Analysis" | 2025 | New | Foundation model architectures, pre-training, adaptation |
+| "Deep learning and electrocardiography: systematic review" | 2025 | New | 198 publications, comprehensive DL survey |
+| "Generalizability of electrocardiographic artificial intelligence" | 2025 | New | ECG-AI generalizability across populations |
 | "Deep Learning for ECG Analysis: Benchmarks and Insights from PTB-XL" | 2021 | 400+ | PTB-XL benchmarking |
 | "Automatic diagnosis of the 12-lead ECG using a deep neural network" | 2020 | 800+ | Deep learning methods |
 | "ECG arrhythmia classification using a 2-D convolutional neural network" | 2018 | 1000+ | CNN for arrhythmia |
 
-### Recent High-Impact Papers (2024-2025)
+### Recent High-Impact Papers (2024-2026)
 
 | Paper | Year | Focus | Link |
 |-------|------|-------|------|
+| "CAMEL: An ECG Language Model for Forecasting Cardiac Events" | 2026 | First ELM for cardiac event forecasting | [arXiv](https://arxiv.org/abs/2602.15677) |
+| "RhythmBERT: Self-Supervised Language Model for Heart Disease Detection" | 2026 | Self-supervised latent ECG representations | [arXiv](https://arxiv.org/abs/2602.23060) |
+| "AnyECG: Evolved ECG Foundation Model for Holistic Health Profiling" | 2026 | 1,172 conditions, future risk prediction | [arXiv](https://arxiv.org/abs/2601.10748) |
+| "ELF: Encoder-Free ECG Language Model" | 2026 | Simplified ELM architecture | [arXiv](https://arxiv.org/abs/2601.18798) |
+| "Harvard-Emory ECG Database" | 2025 | Largest open-access ECG database (10.6M ECGs) | [Nature Data](http://www.nature.com/articles/s41597-026-06861-9) |
+| "GEM: Empowering MLLM for Grounded ECG Understanding" | 2025 | Multimodal ECG + images + text, NeurIPS 2025 | [arXiv](https://arxiv.org/abs/2503.06073) |
+| "OpenECG: Benchmarking ECG Foundation Models with 1.2M Records" | 2025 | Foundation model benchmark, 9 centers | [arXiv](https://arxiv.org/abs/2503.00711) |
+| "ExChanGeAI: End-to-End Platform for ECG Analysis and Fine-tuning" | 2025 | Open-source ECG platform + CardX model | [arXiv](https://arxiv.org/abs/2503.13570) |
 | "CODE-II: A Large-Scale ECG Dataset with 66 Diagnostic Classes" | 2025 | Large-scale clinical dataset | [arXiv](https://arxiv.org/abs/2511.15632) |
 | "VARS: VersAtile and Risk-Sensitive Cardiac Diagnosis" | 2025 | Graph-based ECG representation | [arXiv](https://arxiv.org/abs/2511.07973) |
 | "Heartcare Suite: Multimodal Framework for ECG Analysis" | 2025 | Multimodal ECG analysis, HeartcareGPT | [arXiv](https://arxiv.org/abs/2506.05831) |
+| "ECGFM: A Foundation Model Trained on Multi-Center Million-ECG Dataset" | 2025 | Contrastive + generative pre-training | [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S1566253525004361) |
+| "ECGFounder: An ECG Foundation Model Built on 10M+ Recordings" | 2024 | 150 diagnostic categories, expert-level | [arXiv](https://arxiv.org/abs/2410.04133) |
+| "ECG-GPT: AI-Based Automated Interpretation of ECG Images" | 2024 | Vision-based, format-independent | [medRxiv](https://www.medrxiv.org/content/10.1101/2024.02.17.24302976v2) |
+| "ECG-FM: An Open Electrocardiogram Foundation Model" | 2024 | Open-weight transformer, 90.9M params | [arXiv](https://arxiv.org/abs/2408.05178) |
 | "ECGtizer: Digitizing Paper ECGs with Deep Learning" | 2024 | Paper ECG digitization | [arXiv](https://arxiv.org/abs/2412.12139) |
 | "EchoNext: AI-Enhanced ECG for Structural Heart Disease" | 2025 | Structural heart disease detection | [PhysioNet](https://physionet.org/content/echonext/) |
 
@@ -234,20 +276,33 @@
 | **ResNet** | 2022 | 99.1% | 98.5% |
 | **SVM+Wavelet** | 2019 | 97.8% | 96.2% |
 
+#### Foundation Model Benchmarks
+| Method | Year | Key Metric | Scope |
+|--------|------|------------|-------|
+| **AnyECG** | 2026 | AUROC >0.7 for 306 diseases | 1,172 conditions, 13.3M ECGs |
+| **ECGFounder** | 2024 | AUROC >0.95 for 80 diagnoses | 150 categories, 10.7M ECGs |
+| **ECG-FM** | 2024 | AUROC 0.996 (AF), 0.929 (low LVEF) | Open-weight, 1.5M ECGs |
+| **CAMEL** | 2026 | +12.4% on ECGForecastBench | Cardiac event forecasting |
+| **GEM** | 2025 | +22.7% explainability | Grounded multimodal interpretation |
+
 #### Structural Heart Disease Detection
 | Method | Year | Accuracy | Dataset |
 |--------|------|----------|---------|
 | **EchoNext** | 2024 | 77% | EchoNext (vs. 64% cardiologists) |
 | **AI-ECG for HCM** | 2024 | High | Cleveland Clinic study |
 
-### Recent Research Trends (2024-2025)
+### Recent Research Trends (2024-2026)
 
-- **Foundation Models**: Large pre-trained models for ECG (HeartcareGPT, CODE-II models)
-- **Self-supervised Learning**: Learning from unlabeled ECG data, leveraging large datasets
+- **Foundation Models**: Large pre-trained models achieving expert-level performance (ECGFounder, AnyECG, ECG-FM, CardX, ECGFM)
+- **ECG Language Models**: LLM-based ECG interpretation and report generation (CAMEL, GEM, ELF, RhythmBERT, ECG-GPT)
+- **Cardiac Event Forecasting**: Predicting future adverse cardiac outcomes from ECG signals (CAMEL's ECGForecastBench)
+- **Grounded/Explainable Interpretation**: Linking diagnoses to measurable ECG parameters (GEM, VARS)
+- **Holistic Health Profiling**: ECG-based prediction across 1,000+ conditions including non-cardiac diseases (AnyECG)
+- **Self-supervised Learning**: Learning from unlabeled ECG data; BYOL and MAE outperform contrastive approaches (OpenECG)
+- **Multi-modal Analysis**: Combining ECG time series, images, and text (GEM, EchoNext, Heartcare Suite)
+- **Large-Scale Datasets**: HEEDB (10.6M ECGs), CODE-II (2.7M), MIMIC-IV-ECG (800K), Icentia11k
+- **Open-Source Platforms**: Democratizing ECG deep learning for non-experts (ExChanGeAI, ECG-FM)
 - **Federated Learning**: Privacy-preserving ECG analysis across institutions
-- **Explainable AI**: Interpretable ECG classification (VARS framework, attention mechanisms)
-- **Multi-modal Analysis**: Combining ECG with echocardiograms, clinical data (EchoNext, Heartcare Suite)
-- **Large-Scale Datasets**: CODE-II (2.7M ECGs), Icentia11k (continuous monitoring)
 - **Paper ECG Digitization**: Automated recovery of signals from paper records (ECGtizer)
 - **Graph-Based Representations**: Novel approaches for heterogeneous ECG signals (VARS)
 - **Real-Time Analysis**: AI-powered platforms for clinical decision support (DeepECG, Qaly)
@@ -340,6 +395,18 @@ IEEE Eng in Med and Biol 20(3):45-50 (May-June 2001).
 [Citation information to be added - see PhysioNet]
 ```
 
+**HEEDB:**
+```
+Reyna, M.A., Deepanshi, Weigle, J., et al. (2025).
+The Harvard-Emory ECG Database. Scientific Data.
+```
+
+**MIMIC-IV-ECG:**
+```
+Gow, B., Pollard, T., Nathanson, L.A., Johnson, A., Moody, B., Fernandes, C., et al. (2023).
+MIMIC-IV-ECG: Diagnostic Electrocardiogram Matched Subset. PhysioNet.
+```
+
 **EchoNext:**
 ```
 [Citation information to be added - see PhysioNet]
@@ -397,7 +464,7 @@ We welcome contributions to this repository! Here's how you can help:
 
 ## 🏷️ Tags and Keywords
 
-`ecg-datasets` `electrocardiogram` `cardiology` `machine-learning` `deep-learning` `arrhythmia` `heart-rhythm` `physionet` `clinical-data` `medical-ai` `signal-processing` `healthcare` `biomedical-engineering` `cardiac-monitoring` `ecg-classification` `heart-disease` `medical-datasets` `public-health` `cardiovascular` `wearable-devices`
+`ecg-datasets` `electrocardiogram` `cardiology` `machine-learning` `deep-learning` `foundation-models` `ecg-language-models` `arrhythmia` `heart-rhythm` `physionet` `clinical-data` `medical-ai` `signal-processing` `healthcare` `biomedical-engineering` `cardiac-monitoring` `ecg-classification` `heart-disease` `medical-datasets` `public-health` `cardiovascular` `wearable-devices`
 
 ---
 
@@ -422,4 +489,4 @@ If you find this repository useful, please consider giving it a star!
 
 ---
 
-**Last Updated**: December 2025 | **Total Datasets**: 60+ | **Total Records**: 3,000,000+
+**Last Updated**: March 2026 | **Total Datasets**: 65+ | **Total Records**: 14,000,000+
