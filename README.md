@@ -513,8 +513,12 @@ This repository is licensed under the MIT License. However, individual datasets 
 
 If you find this repository useful, please consider giving it a star! 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=aaekay/ecg-datasets&type=Date)](https://star-history.com/#aaekay/ecg-datasets&Date)
-
----
+<a href="https://www.star-history.com/?type=date&repos=aaekay%2Fecg-datasets">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=aaekay/ecg-datasets&type=date&theme=dark&legend=top-left&sealed_token=rDsgtMpETaOoQ6vLEipjuuwujkuRqchB8KYPhjuXHCQyKmkoNRSFUYzyk1xZRje4snMiEXI-tkkjQRyneJe5qiU1yOGALq8j_eaZxFuXOUEJAtope23OkrUzkyXP7wGxH3P-R3WjnBwEn30Z4xr4XtoZnlbHFA8Az_UyjDYi7c3rGgjzydJVDWBgP03g" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=aaekay/ecg-datasets&type=date&legend=top-left&sealed_token=rDsgtMpETaOoQ6vLEipjuuwujkuRqchB8KYPhjuXHCQyKmkoNRSFUYzyk1xZRje4snMiEXI-tkkjQRyneJe5qiU1yOGALq8j_eaZxFuXOUEJAtope23OkrUzkyXP7wGxH3P-R3WjnBwEn30Z4xr4XtoZnlbHFA8Az_UyjDYi7c3rGgjzydJVDWBgP03g" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=aaekay/ecg-datasets&type=date&legend=top-left&sealed_token=rDsgtMpETaOoQ6vLEipjuuwujkuRqchB8KYPhjuXHCQyKmkoNRSFUYzyk1xZRje4snMiEXI-tkkjQRyneJe5qiU1yOGALq8j_eaZxFuXOUEJAtope23OkrUzkyXP7wGxH3P-R3WjnBwEn30Z4xr4XtoZnlbHFA8Az_UyjDYi7c3rGgjzydJVDWBgP03g" />
+ </picture>
+</a>
 
 **Last Updated**: July 2026 | **Total Datasets**: 90+ | **Total Records**: 20,000,000+
