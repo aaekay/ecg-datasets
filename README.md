@@ -3,9 +3,9 @@
 *A curated collection of public ECG datasets for machine learning, research, and clinical applications*
 
 [![Stars](https://img.shields.io/github/stars/aaekay/ecg-datasets?style=social)](https://github.com/aaekay/ecg-datasets)
-[![Last Updated](https://img.shields.io/badge/last%20updated-Mar--2026-blue)](https://github.com/aaekay/ecg-datasets)
+[![Last Updated](https://img.shields.io/badge/last%20updated-Jul--2026-blue)](https://github.com/aaekay/ecg-datasets)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#contributing)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) *(local license file unavailable; see [change log](change_logs.md))*
 
 ## 📋 Table of Contents
 
@@ -28,10 +28,12 @@
 
 | Dataset | Year | Records | Patients | Duration | Leads | Sample Rate | Access | License | Link |
 |---------|------|---------|----------|----------|-------|-------------|--------|---------|------|
-| **HEEDB** | 2025 | 10,608,417 | 1,818,247 | 10s | 12-lead | 250-500 Hz | Credentialed | BDSP License | [BDSP](https://bdsp.io/content/heedb/4.0/) |
+| **ACS-ECG** | 2026 | 19,955 | 18,909 | 10s | 12-lead | 500 Hz | Public | CC BY 4.0 | [Figshare](https://doi.org/10.6084/m9.figshare.29925314) |
+| **HEEDB** | 2025 | 11,670,015 | 2,167,795 | 10s | 12-lead | 250-500 Hz | Credentialed | BDSP License | [BDSP](https://bdsp.io/content/heedb/5.0/) |
 | **CODE-II** | 2025 | 2,735,269 | 2,093,807 | 10s | 12-lead | 500 Hz | Public | CC BY 4.0 | [arXiv](https://arxiv.org/abs/2511.15632) |
 | **MIMIC-IV-ECG** | 2023 | ~800,000 | ~160,000 | 10s | 12-lead | 500 Hz | Credentialed | PhysioNet License | [PhysioNet](https://physionet.org/content/mimic-iv-ecg/) |
 | **SPH 12-lead** | 2022 | 25,770 | 24,666 | 10-60s | 12-lead | 500 Hz | Academic | CC BY 4.0 | [Nature Data](https://doi.org/10.1038/s41597-022-01403-5) |
+| **CODE-15%** | 2021 | 345,779 | 233,770 | 7.3-10.2s | 12-lead | 400 Hz | Public | CC BY 4.0 | [Zenodo](https://doi.org/10.5281/zenodo.4916206) |
 | **Chapman-Shaoxing** | 2020 | 45,152 | 34,905 | 10s | 12-lead | 500 Hz | Public | ODC-BY | [Figshare](https://figshare.com/collections/ChapmanECG/4560497/2) |
 | **PTB-XL** | 2020 | 21,837 | 18,885 | 10s | 12-lead | 500 Hz | Public | CC BY 4.0 | [PhysioNet](https://physionet.org/content/ptb-xl/1.0.3/) |
 | **Georgia 12-lead** | 2020 | 10,344 | 10,344 | Variable | 12-lead | 500 Hz | Academic | PhysioNet License | [PhysioNet](https://physionet.org/content/challenge-2020/1.0.2/) |
@@ -41,6 +43,10 @@
 
 | Dataset | Year | Records | Focus | Duration | Leads | Sample Rate | Access | Link |
 |---------|------|---------|--------|----------|-------|-------------|--------|------|
+| **ARGO** | 2026 | 1,962 | Post-ischemic ventricular tachycardia | 2.5s | 12-lead + EGM | 1000 Hz | Public | [PhysioNet](https://physionet.org/content/argo/1.0.0/) |
+| **VitalDB Arrhythmia** | 2026 | 482 | Intraoperative arrhythmia | ~203 hours total | 1-lead | 500 Hz | Public | [PhysioNet](https://physionet.org/content/vitaldb-arrhythmia/1.0.0/) |
+| **Brugada-HUCA** | 2026 | 363 | Brugada syndrome | 12s | 12-lead | 100 Hz | Public | [PhysioNet](https://physionet.org/content/brugada-huca/1.0.0/) |
+| **SHDB-AF** | 2025 | 128 | Atrial Fibrillation | ~24 hours | 2-lead | 200 Hz | Public | [PhysioNet](https://physionet.org/content/shdb-af/1.0.1/) |
 | **INCART** | 2003 | 75 | Arrhythmia | 30 min | 12-lead | 257 Hz | Public | [PhysioNet](https://physionet.org/content/incartdb/1.0.0/) |
 | **MIT-BIH AF** | 2000 | 25 | Atrial Fibrillation | Long-term | 2-lead | 250 Hz | Public | [PhysioNet](https://physionet.org/content/afdb/1.0.0/) |
 | **European ST-T** | 1991 | 90 | ST-T Changes | 2 hours | 2-lead | 250 Hz | Public | [PhysioNet](https://physionet.org/content/edb/1.0.0/) |
@@ -52,7 +58,12 @@
 | Dataset | Year | Records | Patients | Duration | Leads | Sample Rate | Access | Link |
 |---------|------|---------|----------|----------|-------|-------------|--------|------|
 | **Icentia11k** | 2024 | 2B beats | 11,000 | Up to 2 weeks | 1-lead | 250 Hz | Public | [PhysioNet](https://physionet.org/content/icentia11k-continuous-ecg/1.0/) |
+| **Sudden Cardiac Death Holter** | 2004 | 23 | 23 | 4-25 hours | 2-lead | 250 Hz | Public | [PhysioNet](https://physionet.org/content/sddb/1.0.0/) |
+| **Long-Term ST** | 2003 | 86 | 80 | 21-24 hours | 2-3 lead | 250 Hz | Public | [PhysioNet](https://physionet.org/content/ltstdb/1.0.0/) |
+| **Sleep Heart Health Study** | 2003 | 5,804 | 5,804 | Overnight | 1-lead ECG + PSG | 250 Hz | Registered | [NSRR](https://sleepdata.org/datasets/shhs) |
+| **Apnea-ECG** | 2000 | 70 | 70 | 7-10 hours | 1-lead | 100 Hz | Public | [PhysioNet](https://physionet.org/content/apnea-ecg/1.0.0/) |
 | **MIT-BIH Long-term** | 1999 | 7 | 7 | 14-22 hours | 2-lead | 128 Hz | Public | [PhysioNet](https://physionet.org/content/ltdb/1.0.0/) |
+| **MIT-BIH Normal Sinus Rhythm** | 1999 | 18 | 18 | 20-24 hours | 2-lead | 128 Hz | Public | [PhysioNet](https://physionet.org/content/nsrdb/1.0.0/) |
 
 ---
 
@@ -62,6 +73,12 @@
 
 | Dataset | Year | Records | Subjects | Condition Focus | Duration | Sample Rate | Access | Link |
 |---------|------|---------|----------|-----------------|----------|-------------|--------|------|
+| **Autonomic Aging** | 2021 | 1,104 | 1,104 | Cardiovascular autonomic aging | 8-45 min | 1000 Hz | Public | [PhysioNet](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/) |
+| **EPHNOGRAM** | 2021 | 69 | 24 | Simultaneous ECG and PCG | Variable | 8000 Hz | Public | [PhysioNet](https://physionet.org/content/ephnogram/1.0.0/) |
+| **BUT QDB** | 2020 | 18 | 15 | ECG signal quality | 24+ hours | 1000 Hz | Public | [PhysioNet](https://physionet.org/content/butqdb/1.0.0/) |
+| **CEBSDB** | 2014 | 60 | 20 | ECG, breathing and SCG | 5-50 min | 5000 Hz | Public | [PhysioNet](https://physionet.org/content/cebsdb/1.0.0/) |
+| **ECG-ID** | 2014 | 310 | 90 | ECG biometrics | 20s | 500 Hz | Public | [PhysioNet](https://physionet.org/content/ecgiddb/1.0.0/) |
+| **Abdominal and Direct Fetal ECG** | 2012 | 5 | 5 | Fetal ECG extraction | 5 min | 1000 Hz | Public | [PhysioNet](https://physionet.org/content/adfecgdb/1.0.0/) |
 | **QT Database** | 2003 | 105 | 105 | QT interval analysis | 15 min | 250 Hz | Public | [PhysioNet](https://physionet.org/content/qtdb/1.0.0/) |
 | **Fantasia Database** | 2000 | 40 | 40 | Heart rate variability | 120 min | 250 Hz | Public | [PhysioNet](https://physionet.org/content/fantasia/1.0.0/) |
 | **MIT-BIH Supraventricular** | 1999 | 78 | 78 | Supraventricular arrhythmias | 30 min | 128 Hz | Public | [PhysioNet](https://physionet.org/content/svdb/1.0.0/) |
@@ -71,13 +88,23 @@
 
 | Dataset | Year | Records | Patients | Special Features | Access | Link |
 |---------|------|---------|----------|-----------------|--------|------|
+| **Neurotech EEG** | 2026 | 23,607 | 4,914 | Ambulatory EEG with ECG channel, 212,186 hours | Credentialed | [BDSP](https://bdsp.io/content/nf89816gtxbon11kbr9a/1.0/) |
+| **EchoNext** | 2026 | Variable | Variable | ECG + echocardiogram, structural heart disease | Restricted | [PhysioNet](https://physionet.org/content/echonext/) |
+| **BBBD** | 2026 | 5 experiments | 178 | EEG + ECG + eye tracking during educational videos | Public | [Project](https://bbbd.pythonanywhere.com/) |
+| **Yoga EEG-ECG-Video** | 2026 | 49 | 49 | Concentration and mind-wandering, BIDS format | Public | [Nature Data](https://doi.org/10.1038/s41597-026-07209-z) |
+| **MIMIC-III-Ext-PPG** | 2026 | 4,920,487 | 6,131 | PPG with simultaneous ECG, ABP and respiration | Credentialed | [PhysioNet](https://physionet.org/content/mimic-iii-ext-ppg/1.1.0/) |
+| **MEETI** | 2026 | 784,680 | 160,597 | ECG signals, images, features and interpretations | Credentialed | [GitHub](https://github.com/PKUDigitalHealth/MIMIC-IV-ECG-Ext-Text-Image) |
+| **PSG-IPA** | 2026 | 20 | 20 | PSG with ECG and multi-scorer annotations | Public | [PhysioNet](https://physionet.org/content/psg-ipa/1.0.0/) |
+| **HOME** | 2025 | Variable | Variable | Evaluation-only consumer single-lead ECG benchmark | Public | [Zenodo](https://doi.org/10.5281/zenodo.18014346) |
+| **HK1K** | 2025 | 1,032 | 1,032 | Pediatric EEG + ECG around NREM sleep onset | Public | [Zenodo](https://doi.org/10.5281/zenodo.17138539) |
+| **tOLIet** | 2025 | 149 | 86 | Thigh ECG from toilet-seat dry electrodes | Public | [PhysioNet](https://physionet.org/content/tollet/1.0.1/) |
 | **OpenECG** | 2025 | 1,200,000 | Multiple | Foundation model benchmark, 9 centers | Public | [arXiv](https://arxiv.org/abs/2503.00711) |
-| **EchoNext** | 2025 | Variable | Variable | ECG + Echocardiogram, structural heart disease | Public | [PhysioNet](https://physionet.org/content/echonext/) |
 | **Heartcare-220K** | 2025 | 220,000 | 220,000 | Multimodal framework, disease diagnosis | Public | [arXiv](https://arxiv.org/abs/2506.05831) |
 | **Icentia11k** | 2024 | 2B beats | 11,000 | Continuous ECG, up to 2 weeks | Public | [PhysioNet](https://physionet.org/content/icentia11k-continuous-ecg/1.0/) |
 | **PTB-XL+** | 2023 | 21,837 | 18,885 | Enhanced with extracted features | Public | [PhysioNet](https://physionet.org/content/ptb-xl-plus/1.0.1/) |
-| **LUDB** | 2020 | 200 | 200 | Lobachevsky University, annotated | Academic | [Kaggle](https://www.kaggle.com/datasets/lewisgunter/ludb-lobachevsky-university-electrocardiography-database) |
+| **LUDB** | 2020 | 200 | 200 | Lobachevsky University, annotated | Public | [PhysioNet](https://physionet.org/content/ludb/1.0.1/) |
 | **UVA ECG** | 2019 | 1,000+ | 1,000+ | University of Virginia collection | Academic | Request Access |
+| **WESAD** | 2018 | 15 | 15 | Wearable chest ECG and multimodal stress signals | Public | [UCI](https://archive.ics.uci.edu/dataset/465/wesad+wearable+stress+and+affect+detection) |
 
 ---
 
@@ -87,9 +114,9 @@
 
 | Challenge | Year | Records | Task | Best Performance | Access | Link |
 |-----------|------|---------|------|-----------------|--------|------|
-| **Challenge 2026** | 2026 | TBD | TBD | Upcoming | Public | [Kaggle](https://www.kaggle.com/datasets/physionet/physionetchallenge2026data) |
-| **Challenge 2025** | 2025 | Multiple sources | Chagas disease detection from ECG | In progress | Public | [Moody Challenge](https://moody-challenge.physionet.org/2025) |
-| **Challenge 2024** | 2024 | 21,799 images | ECG Image Digitization | Results pending | Public | [PhysioNet](https://physionet.org/content/challenge-2024/1.0.0/) |
+| **Challenge 2026** | 2026 | 6,600 training PSGs | Cognitive impairment prediction from sleep studies | Official phase | Public | [Moody Challenge](https://moody-challenge.physionet.org/2026/) |
+| **Challenge 2025** | 2025 | Multiple sources | Chagas disease detection from ECG | Results released | Public | [Moody Challenge](https://moody-challenge.physionet.org/2025) |
+| **Challenge 2024** | 2024 | 21,799 images | ECG Image Digitization | Results released | Public | [Moody Challenge](https://moody-challenge.physionet.org/2024/) |
 | **Challenge 2021** | 2021 | 88,253 | Multi-lead ECG Classification | F1: 0.71 | Public | [PhysioNet](https://physionet.org/content/challenge-2021/1.0.3/) |
 | **Challenge 2020** | 2020 | 43,101 | 12-lead ECG Classification | F1: 0.533 | Public | [PhysioNet](https://physionet.org/content/challenge-2020/1.0.2/) |
 | **Challenge 2017** | 2017 | 12,186 | AF Detection | F1: 0.83 | Public | [PhysioNet](https://physionet.org/content/challenge-2017/1.0.0/) |
@@ -99,7 +126,7 @@
 
 | Challenge | Year | Records | Task | Leads | Sample Rate | Access | Link |
 |-----------|------|---------|------|-------|-------------|--------|------|
-| **CPSC 2021** | 2021 | 3,453 | Paroxysmal AF Detection | 1-lead | 200 Hz | Public | [CPSC](http://2021.icbeb.org/CPSC2021) |
+| **CPSC 2021** | 2021 | 3,453 | Paroxysmal AF Detection | 1-lead | 200 Hz | Public | [CPSC — unavailable](http://2021.icbeb.org/CPSC2021) |
 | **CPSC 2019** | 2019 | 6,877 | Multi-label Classification | 12-lead | 500 Hz | Public | [CPSC](http://2019.icbeb.org/Challenge.html) |
 | **CPSC 2018** | 2018 | 13,244 | AF Detection | 1-lead | 300 Hz | Public | [CPSC](http://2018.icbeb.org/Challenge.html) |
 
@@ -107,9 +134,9 @@
 
 | Dataset | Platform | Year | Records | Task | Access | Link |
 |---------|----------|------|---------|------|--------|------|
-| **ECG-5000** | Various | 2024 | 5,000 | Anomaly Detection | Public | [Various Sources](https://www.juheapi.com/datasets/ecg-5000-dataset) |
+| **ECG-5000** | Various | 2024 | 5,000 | Anomaly Detection | Public | [UCR Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/) |
 | **PTB-XL ECG Images** | Kaggle | 2024 | 21,837 | Synthetic ECG Images | Public | [Kaggle](https://www.kaggle.com/datasets/bjoernjostein/ptb-xl-ecg-image-gmc2024) |
-| **ECG Arrhythmia Classification** | Kaggle | 2020 | Various | Multi-class Classification | Public | [Kaggle](https://www.kaggle.com/c/siim-isic-melanoma-classification) |
+| **ECG Arrhythmia Classification** | Kaggle | 2020 | 4 sources | Multi-class Classification | Public | [Kaggle](https://www.kaggle.com/datasets/sadmansakib7/ecg-arrhythmia-classification-dataset) |
 | **ECG Heartbeat Categorization** | Kaggle | 2019 | 109,446 | Beat Classification | Public | [Kaggle](https://www.kaggle.com/datasets/shayanfazeli/heartbeat) |
 
 ---
@@ -120,9 +147,10 @@
 
 | Dataset | Records | Patients | Total Hours | Data Size | Year |
 |---------|---------|----------|-------------|-----------|------|
-| HEEDB | 10,608,417 | 1,818,247 | 29,468 | ~1.6 TB | 2025 |
+| HEEDB | 11,670,015 | 2,167,795 | 32,417 | Variable | 2025 |
 | CODE-II | 2,735,269 | 2,093,807 | 7,598 | ~500 GB | 2025 |
 | MIMIC-IV-ECG | ~800,000 | ~160,000 | ~2,222 | ~150 GB | 2023 |
+| CODE-15% | 345,779 | 233,770 | ~960 | Variable | 2021 |
 | PhysioNet 2021 | 88,253 | 88,253 | 245.1 | ~15 GB | 2021 |
 | Chapman-Shaoxing | 45,152 | 34,905 | 125.4 | ~8.2 GB | 2020 |
 | SPH 12-lead | 25,770 | 24,666 | Variable | ~5.1 GB | 2022 |
@@ -133,24 +161,24 @@
 
 | Condition | Primary Datasets | Total Records | Best Performance |
 |-----------|------------------|---------------|-----------------|
-| **Arrhythmia** | MIT-BIH, PTB-XL, Chapman, CODE-II, HEEDB | 13,000,000+ | 99.3% Acc |
+| **Arrhythmia** | MIT-BIH, PTB-XL, Chapman, CODE-II, HEEDB | 14,000,000+ | 99.3% Acc |
 | **Atrial Fibrillation** | MIT-BIH AF, CPSC 2018/2021, Icentia11k, MIMIC-IV-ECG | 800,000+ | AUROC: 0.996 (ECG-FM) |
-| **Myocardial Infarction** | PTB-XL, PTB Diagnostic, CODE-II, HEEDB | 13,000,000+ | AUC: 0.95+ |
+| **Myocardial Infarction** | PTB-XL, PTB Diagnostic, CODE-II, HEEDB | 14,000,000+ | AUC: 0.95+ |
 | **Structural Heart Disease** | EchoNext | Variable | 77% Acc (EchoNext) |
-| **Normal vs Abnormal** | All major datasets | 14,000,000+ | 98.7% Acc |
-| **Multi-label (150+ classes)** | HEEDB, PTB-XL, Chapman, SPH, CODE-II | 13,000,000+ | AUROC >0.95 (ECGFounder) |
+| **Normal vs Abnormal** | All major datasets | 20,000,000+ | 98.7% Acc |
+| **Multi-label (150+ classes)** | HEEDB, PTB-XL, Chapman, SPH, CODE-II | 14,000,000+ | AUROC >0.95 (ECGFounder) |
 
 ### By Data Type and Format
 
 | Data Type | Datasets | Advantages | Use Cases |
 |-----------|----------|------------|-----------|
 | **Raw Waveform** | HEEDB, PTB-XL, Chapman, MIT-BIH, CODE-II, Icentia11k, MIMIC-IV-ECG | High fidelity, full information | Deep learning, signal processing |
-| **Continuous Monitoring** | Icentia11k | Long-term recordings, up to 2 weeks | Arrhythmia detection, HRV analysis |
+| **Continuous Monitoring** | Icentia11k, Long-Term ST, Sudden Cardiac Death Holter, Apnea-ECG | Long-term recordings, hours to weeks | Arrhythmia detection, HRV analysis |
 | **Processed Features** | PTB-XL+ | Pre-extracted features | Traditional ML, quick prototyping |
 | **Images** | PTB-XL Images, Challenge 2024 | Visual interpretation | Computer vision, image-based ML |
-| **Multimodal** | EchoNext, Heartcare-220K | ECG + other clinical data | Comprehensive diagnosis |
+| **Multimodal** | EchoNext, MEETI, BBBD, HK1K, Heartcare-220K | ECG + other clinical data | Comprehensive diagnosis |
 | **Foundation Model Training** | HEEDB, OpenECG, MIMIC-IV-ECG | Large-scale pre-training | Self-supervised learning, transfer learning |
-| **Annotations** | Most PhysioNet datasets, HEEDB | Expert labels, ICD codes | Supervised learning, validation |
+| **Annotations** | Most PhysioNet datasets, HEEDB, ARGO, VitalDB Arrhythmia, BUT QDB | Expert labels, ICD codes | Supervised learning, validation |
 
 ---
 
@@ -165,7 +193,7 @@
 | **BioSPPy** | Python | Biosignal processing | `pip install biosppy` |
 | **HeartPy** | Python | Heart rate analysis | `pip install heartpy` |
 | **PyECG** | Python | ECG analysis toolkit | `pip install pyecg` |
-| **ECGtizer** | Python | Paper ECG digitization | [GitHub](https://github.com/ECGtizer) |
+| **ECGtizer** | Python | Paper ECG digitization | [GitHub — unavailable](https://github.com/ECGtizer) |
 | **CardioMark** | MATLAB | ECG annotation tool | [GitHub](https://github.com/CardioMark) |
 
 ### Visualization and Analysis
@@ -238,7 +266,7 @@
 | "RhythmBERT: Self-Supervised Language Model for Heart Disease Detection" | 2026 | Self-supervised latent ECG representations | [arXiv](https://arxiv.org/abs/2602.23060) |
 | "AnyECG: Evolved ECG Foundation Model for Holistic Health Profiling" | 2026 | 1,172 conditions, future risk prediction | [arXiv](https://arxiv.org/abs/2601.10748) |
 | "ELF: Encoder-Free ECG Language Model" | 2026 | Simplified ELM architecture | [arXiv](https://arxiv.org/abs/2601.18798) |
-| "Harvard-Emory ECG Database" | 2025 | Largest open-access ECG database (10.6M ECGs) | [Nature Data](http://www.nature.com/articles/s41597-026-06861-9) |
+| "Harvard-Emory ECG Database" | 2026 | Largest credentialed ECG database (11.7M ECGs) | [Nature Data](https://www.nature.com/articles/s41597-026-06861-9) |
 | "GEM: Empowering MLLM for Grounded ECG Understanding" | 2025 | Multimodal ECG + images + text, NeurIPS 2025 | [arXiv](https://arxiv.org/abs/2503.06073) |
 | "OpenECG: Benchmarking ECG Foundation Models with 1.2M Records" | 2025 | Foundation model benchmark, 9 centers | [arXiv](https://arxiv.org/abs/2503.00711) |
 | "ExChanGeAI: End-to-End Platform for ECG Analysis and Fine-tuning" | 2025 | Open-source ECG platform + CardX model | [arXiv](https://arxiv.org/abs/2503.13570) |
@@ -343,7 +371,7 @@ signals = record.p_signal
 labels = annotation.symbol
 ```
 
-### 4. Loading CODE-II Dataset (2024)
+### 4. Loading CODE-II Dataset (2025)
 ```python
 # CODE-II dataset access instructions
 # See: https://arxiv.org/abs/2511.15632
@@ -397,7 +425,7 @@ IEEE Eng in Med and Biol 20(3):45-50 (May-June 2001).
 
 **HEEDB:**
 ```
-Reyna, M.A., Deepanshi, Weigle, J., et al. (2025).
+Reyna, M.A., Deepanshi, Weigle, J., et al. (2026).
 The Harvard-Emory ECG Database. Scientific Data.
 ```
 
@@ -477,7 +505,7 @@ This repository is licensed under the MIT License. However, individual datasets 
 ## 📞 Contact & Support
 
 - **Issues**: [GitHub Issues](https://github.com/aaekay/ecg-datasets/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/aaekay/ecg-datasets/discussions)
+- **Discussions**: [GitHub Discussions — not enabled](https://github.com/aaekay/ecg-datasets/discussions)
 
 ---
 
@@ -485,8 +513,8 @@ This repository is licensed under the MIT License. However, individual datasets 
 
 If you find this repository useful, please consider giving it a star! 
 
-[![Star History Chart](https://api.star-history.com/svg?repos=aaekay/ecg-datasets&type=Date)](https://star-history.com/aaekay/ecg-datasets&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=aaekay/ecg-datasets&type=Date)](https://star-history.com/#aaekay/ecg-datasets&Date)
 
 ---
 
-**Last Updated**: March 2026 | **Total Datasets**: 65+ | **Total Records**: 14,000,000+
+**Last Updated**: July 2026 | **Total Datasets**: 90+ | **Total Records**: 20,000,000+
